@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Separator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="input-container">
+        <textarea id="reviews-input" placeholder="Enter reviews here..."></textarea>
+        <input type="text" id="review-link" placeholder="Enter review link here...">
+        <input type="file" id="review-photos" accept="image/*" multiple>
+        <button onclick="generateOutputs()">Generate Outputs</button>
+    </div>
+
+    <div class="stats-container">
+        <p>Total Reviews: <span id="total-reviews">0</span></p>
+        <p>Done: <span id="done-count">0</span></p>
+        <p>Undone: <span id="undone-count">0"></span></p>
+    </div>
+
+    <div class="tabs-container">
+        <button onclick="showTab('undone')">Undone</button>
+        <button onclick="showTab('done')">Done</button>
+    </div>
+
+    <div class="output-container" id="undone-container"></div>
+    <div class="output-container" id="done-container" style="display: none;"></div>
+
+    <div class="actions-container">
+        <button onclick="saveData()">Save Data</button>
+        <textarea id="data-output" placeholder="Copy this data..." readonly></textarea>
+        <textarea id="data-input" placeholder="Paste saved data here..."></textarea>
+        <button onclick="loadData()">Load Data</button>
+        <input type="file" id="data-file" accept=".txt" onchange="loadDataFromFile(event)">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

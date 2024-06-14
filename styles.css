@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.input-container, .stats-container, .tabs-container, .actions-container {
+    margin-bottom: 20px;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.output {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.output img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 10px;
+}
+.output .copy-btn, .output .done-btn, .output .undone-btn {
+    position: absolute;
+    top: 10px;
+}
+.output .copy-btn {
+    right: 150px;
+}
+.output .done-btn, .output .undone-btn {
+    right: 10px;
+}
+.done .done-btn {
+    display: none;
+}
+.undone .undone-btn {
+    display: none;
+}
+.tabs-container button {
+    margin-right: 10px;
+}
+.output-container {
+    display: none;
+}
+.output-container.active {
+    display: block;
+}
+.actions-container textarea {
+    height: 100px;
+}
+
+
+
+
+
